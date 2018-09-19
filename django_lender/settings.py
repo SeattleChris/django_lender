@@ -32,6 +32,7 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split()
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'lender_books',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

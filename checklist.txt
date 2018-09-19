@@ -4,12 +4,12 @@ Multiple stages of working on this project.
 
 ## Code 27 Version
 
-- [ ] Modify the contents of the templates/ directory to include a base.html and home.html
-- [ ] Create a simple view controller for the home route, which renders the home.html document
-- [ ] Create a new app inside your project called lender_books
-- [ ] Add your new app to the settings.py, and configure the urls for this new app at the root level of your project
+- [x] Modify the contents of the templates/ directory to include a base.html and home.html
+- [x] Create a simple view controller for the home route, which renders the home.html document
+- [x] Create a new app inside your project called lender_books
+- [x] Add your new app to the settings.py, and configure the urls for this new app at the root level of your project
 Working in the lender-books/ directory:
-- [ ] Create a new model for Book, which represents an item that will be lent to another person, with the following attributes
+- [x] Create a new model for Book, which represents an item that will be lent to another person, with the following attributes
 - [ ] cover_image: An image field
 - [ ] title: Text field
 - [ ] author: Text field
@@ -17,8 +17,8 @@ Working in the lender-books/ directory:
 - [ ] status: Multiple choice field for available or checked-out statuses
 - [ ] date_added: Auto-generated date field
 - [ ] last_borrowed: Auto-updated date field
-- [ ] Create a new template called book_list.html that inherits from base.html, which will render out a list of all books in the system for the current user
-- [ ] Create a new template called book_detail.html that inherits from base.html, which will render out the detail for a single book
+- [x] Create a new template called book_list.html that inherits from base.html, which will render out a list of all books in the system for the current user
+- [x] Create a new template called book_detail.html that inherits from base.html, which will render out the detail for a single book
 - [ ] Create a simple view controller for each of the templates defined above
 - [ ] Create a urls.py for this app, which connects your view controllers and their templates to your application at an appropriate route
 - [ ] Use docker-compose to run makemigrations and migrate once you’ve configured your new model.
@@ -32,6 +32,8 @@ General
 - [x] New branch with appropriate name
 - [x] Prepare Checklist to use with assignment completion
 - [x] Update README as appropriate
+https://canvas.instructure.com/courses/1380083/assignments/9089087
+https://youtu.be/DO76Y5_qkY0?t=34m
 
 
 ### Code 26 Version
