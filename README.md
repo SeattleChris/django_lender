@@ -15,3 +15,9 @@ Install Docker and compose according to the steps starting from these sites:
 https://docker-curriculum.com/#table-of-contents
 https://docs.docker.com/compose/django/
 https://www.pluralsight.com/codeschool
+
+pipenv shell
+docker-compose up -- build
+
+docker-compose down
+
