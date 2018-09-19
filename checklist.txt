@@ -1,0 +1,28 @@
+### Features Checklist
+
+- [x] Ensure that you’ve installed Docker on your local machine
+- [x] Create a new project & repository called django_lender
+- [x] Add all of you standard config files
+- [x] Recreate the Dockerfile and docker-compose.yml that we configured in lecture, update each file as needed for this new project
+- [x] Install django and psycopg2-binary as a dependency for your project
+- [x] Create your Django application and configure the settings to utilize the necessary environment variables
+- [x] Update the DATABASE configuration in settings.py to address a PostgreSQL database using the following config:
+      DATABASES = {
+          'default': {
+              'ENGINE': 'django.db.backends.postgresql',
+              'NAME': os.environ.get('DB_NAME'),
+              'USER': os.environ.get('DB_USER'),
+              'PASSWORD': os.environ.get('DB_PASSWORD'),
+              'HOST': os.environ.get('DB_HOST'),
+              'PORT': 5432,
+              'TEST': {
+                  'NAME': 'lender_test'
+              }
+          }
+      }
+- [x] After config complete, run docker-compose up --build to start up your application,
+- [x] open 127.0.0.1:8000 in the browser to validate that your application is running and functional
+- [x] Prepare Checklist to use with assignment completion
+- [x] No Tests at this time.
+- [x] Update README as appropriate
+
