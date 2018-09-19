@@ -20,4 +20,3 @@ pipenv shell
 docker-compose up -- build
 
 docker-compose down
-

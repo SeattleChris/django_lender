@@ -4,7 +4,7 @@ from django.db import models
 class Book(models.Model):
     """ Each Book will have these properties.
     """
- STATES = [
+    STATES = [
         ('available', 'Available'),
         ('out', 'Checked out'),
     ]
