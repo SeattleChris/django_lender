@@ -31,14 +31,14 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split()
 # Application definition
 
 INSTALLED_APPS = [
-    'django_lender',
     'django.contrib.admin',
-    'lender_books',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_lender',
+    'lender_books',
 ]
 
 MIDDLEWARE = [

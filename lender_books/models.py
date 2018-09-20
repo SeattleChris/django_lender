@@ -3,6 +3,7 @@ from django.db import models
 
 class Book(models.Model):
     """ Each Book will have these properties.
+        STATES will be a drop-down list for where it is placed
     """
     STATES = [
         ('available', 'Available'),

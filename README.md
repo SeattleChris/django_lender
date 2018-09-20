@@ -26,4 +26,12 @@ docker exec -it [web_image_number] bash (command line in container)
 docker exec -it [postgres_image_number] psql -U postgres
     to login and see the DB and tables.
 
+TESTING
+docker container ls (to copy image for either the web or database)
+docker exec -it [web_image_number] bash (command line in container)
+    Now in container terminal
+./manage.py test
+
+WHEN DONE
+
 docker-compose down
