@@ -21,9 +21,9 @@ Working in the lender-books/ directory:
 - [x] Create a new template called book_detail.html that inherits from base.html, which will render out the detail for a single book
 - [x] Create a simple view controller for each of the templates defined above
 - [x] Create a urls.py for this app, which connects your view controllers and their templates to your application at an appropriate route
-- [ ] Use docker-compose to run makemigrations and migrate once you’ve configured your new model.
-- [ ] You will want to use the Admin console to add some records to your database, so you can verify that data is correctly rendering on the site
-- [ ] Run your application and ensure that all things are as they should be!
+- [x] Use docker-compose to run makemigrations and migrate once you’ve configured your new model.
+- [x] You will want to use the Admin console to add some records to your database, so you can verify that data is correctly rendering on the site
+- [x] Run your application and ensure that all things are as they should be!
 Testing
 - [ ] You are required to meet or exceed an 80% coverage benchmark for this application.
 - [ ] Your focus for the time being will be unit testing your view controllers and models, and you should follow our standard format of roughly three test assertions for each controller or model you define for the application
