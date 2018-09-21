@@ -2,6 +2,22 @@
 
 Multiple stages of working on this project.
 
+## Code 28 Version
+
+- [ ] Create a navigation menu in your base.html template, do that today
+- [x] Using the provided templates/ directory, copy that directory and all of it’s contents to the same templates/ directory in your root application
+- [ ] Following the documentation, paying close attention to available context data in each view, configure each file to suit the needs of your application
+- [ ] You will also need a directory for your base.html and home.html
+- [ ] Configure email services for Django for email confirmation.
+- [ ] For Dev, make sure that you configure the Django console email backend. Then any emails you send while working will simply print to the console where Django is running
+Testing
+- [ ] Continue to develop your unit test coverage within the application; focusing on writing at least three assertions for each model or controller that you define
+- [ ] To test registration you will want to be aware of how Django’s email services work in a test environment
+General
+- [x] New branch with appropriate name
+- [x] Prepare Checklist to use with assignment completion
+- [x] Update README as appropriate
+
 ## Code 27 Version
 
 - [x] Modify the contents of the templates/ directory to include a base.html and home.html
