@@ -19,21 +19,26 @@ https://docs.docker.com/compose/django/
 https://www.pluralsight.com/codeschool
 
 pipenv shell
-docker-compose up -- build
+docker-compose up --build
 
 docker container ls (to copy image for either the web or database)
 docker exec -it [web_image_number] bash (command line in container)
  (not needed since in entrypoint.sh)./manage.py runserver
 
+OTHER OPTIONS
 docker exec -it [postgres_image_number] psql -U postgres
     to login and see the DB and tables.
+
+docker ps -a
+
+FINISH & CLEANUP
+docker-compose down
+docker-compose down --remove-orphans
+
+
 
 TESTING
 docker container ls (to copy image for either the web or database)
 docker exec -it [web_image_number] bash (command line in container)
     Now in container terminal
 ./manage.py test
-
-WHEN DONE
-
-docker-compose down

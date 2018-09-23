@@ -45,7 +45,7 @@ Working in the lender-books/ directory:
 - [ ] stretch goal - cover_image: An image field
 - [x] title: Text field
 - [x] author: Text field
-- [x] year: Multiple choice field for year published
+- [ ] year: Multiple choice field for year published
 - [x] status: Multiple choice field for available or checked-out statuses
 - [x] date_added: Auto-generated date field
 - [x] last_borrowed: Auto-updated date field
