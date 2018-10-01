@@ -4,18 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="{% static "styles/reset.css" %}">
-  <link rel="stylesheet" href="{% static "styles/base.css" %}">  <title>Django Demo</title>
+  {% comment %} <link rel="stylesheet" href="{% static "styles/reset.css" %}"> {% endcomment %}
+  {% comment %} <link rel="stylesheet" href="{% static "styles/base.css" %}"> {% endcomment %}
+  <title>Django Demo</title>
 </head>
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'book_list' %}"> List</a></li>
-      </ul>
+      <li><a href="{% url "home" %}">home</a></li>
+      {% if user.is_authenticated %}
+      <li><a href="{% url "book_list" %}">books</a></li>
+      <li><a href="{% url "logout" %}">logout</a></li>
+      {% else %}
+      <li><a href="{% url "django_registration_register" %}"> Register </a></li>
+      <li><a href="{% url "login" %}">Login</a></li>
+      {% endif %}
+      {% if user.is_superuser %}
+      <li><a href="{% url "admin:index" %}" >admin</a></li>
+      {% endif %}
     </nav>
-  </header>
+    {%if user.is_authenticated %}
+    <p>Welcome {{ user.username }}</p>
+    {% endif %}
+</header>
   <main>
     {% block content %}
     <h3>No Content</h3>
