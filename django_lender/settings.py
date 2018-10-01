@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_registration',
+    # 'django_registration',
+    # 'sass_processor',
     'django_lender',
     'lender_books',
 ]
@@ -128,6 +129,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# If DEBUG is true, django doesn't use STATIC_ROOT
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Django Registration settings
 ACCOUNT_ACTIVATION_DAYS = 1

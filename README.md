@@ -1,13 +1,15 @@
 # django_lender
 
 **Author**: Chris L Chapman
-**Version**: 0.3.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 0.4.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 
 Introduction to the concept of Docker and working within containers as a part of the developer workflow. In addition to Docker, this will explore building my first Django web application.
 
 Continue building an application for managing all the various books you own (lets assume you own a lot…). In order to implement this application, you will need to iterate on your django_lender application and add a model, views (templates), and controllers (views).
+
+handle HMAC Registration in your Django application. We’ll explore what the package provides for you by default, as well as the further configurations you can implement to adapt the package to suit your application’s requirements.
 
 ## Getting Started
 
@@ -17,21 +19,26 @@ https://docs.docker.com/compose/django/
 https://www.pluralsight.com/codeschool
 
 pipenv shell
-docker-compose up -- build
+docker-compose up --build
 
 docker container ls (to copy image for either the web or database)
 docker exec -it [web_image_number] bash (command line in container)
  (not needed since in entrypoint.sh)./manage.py runserver
 
+OTHER OPTIONS
 docker exec -it [postgres_image_number] psql -U postgres
     to login and see the DB and tables.
+
+docker ps -a
+
+FINISH & CLEANUP
+docker-compose down
+docker-compose down --remove-orphans
+
+
 
 TESTING
 docker container ls (to copy image for either the web or database)
 docker exec -it [web_image_number] bash (command line in container)
     Now in container terminal
 ./manage.py test
-
-WHEN DONE
-
-docker-compose down

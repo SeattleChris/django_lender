@@ -2,12 +2,28 @@
 
 Multiple stages of working on this project.
 
+## Code 29 Version
+
+- [ ] Using the Django documentation for templating create a fully featured set of templates for your lender application
+- [ ] Your application should be able to display records belonging to a single user in a list view, as well as any single resource in a detail view
+        Note: you do not need to worry about taking user input for this application.
+- [ ] Ensure that you are using proper semantic HTML5 tags in your templates
+- [ ] Take advantage of filters and other features made available by the Django Templating Language to present your application’s data in a well formatted way
+- [ ] Style your application using CSS, and ensure that your static assets are loading when your run your local development server
+Testing
+- [ ] You will be extending your view controllers today, so adjust any existing view controller tests to accommodate for the new HTML that you are rendering and sending back to the client in the response.
+General
+- [x] New branch with appropriate name
+- [x] Prepare Checklist to use with assignment completion
+- [x] Update README as appropriate
+
+
 ## Code 28 Version
 
-- [ ] Create a navigation menu in your base.html template, do that today
+- [x] Create a navigation menu in your base.html template, do that today
 - [x] Using the provided templates/ directory, copy that directory and all of it’s contents to the same templates/ directory in your root application
 - [ ] Following the documentation, paying close attention to available context data in each view, configure each file to suit the needs of your application
-- [ ] You will also need a directory for your base.html and home.html
+- [x] You will also need a directory for your base.html and home.html
 - [ ] Configure email services for Django for email confirmation.
 - [ ] For Dev, make sure that you configure the Django console email backend. Then any emails you send while working will simply print to the console where Django is running
 Testing
@@ -29,7 +45,7 @@ Working in the lender-books/ directory:
 - [ ] stretch goal - cover_image: An image field
 - [x] title: Text field
 - [x] author: Text field
-- [x] year: Multiple choice field for year published
+- [ ] year: Multiple choice field for year published
 - [x] status: Multiple choice field for available or checked-out statuses
 - [x] date_added: Auto-generated date field
 - [x] last_borrowed: Auto-updated date field
