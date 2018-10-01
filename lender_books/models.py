@@ -1,5 +1,5 @@
 from django.db import models
-# from django.contrib.auth.models import User
+from django.contrib.auth.models import User
 from django.dispatch import receiver  # decorator
 from django.utils import timezone
 
@@ -11,8 +11,9 @@ class Book(models.Model):
         ('available', 'Available'),
         ('out', 'Checked out'),
     ]
-    # cover_image = models.
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=0, related_name='books')
     title = models.CharField(max_length=48)
+    # cover_image = models. ...
     author = models.CharField(max_length=48)
     year = models.IntegerField()
     status = models.CharField(choices=STATES, default='out', max_length=48)
@@ -29,6 +30,6 @@ class Book(models.Model):
 
 @receiver(models.signals.post_save, sender=Book)
 def set_book_checked_out_date(sender, instance, **kwargs):
-    if instance.status == 'Checked-Out'and not instance.last_borrowed:
+    if instance.status == 'out'and not instance.last_borrowed:
         instance.last_borrowed = timezone.now
         instance.save()
