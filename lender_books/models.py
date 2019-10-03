@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.dispatch import receiver  # decorator
 from django.utils import timezone
 
+
 class Book(models.Model):
     """ Each Book will have these properties.
         STATES will be a drop-down list for where it is placed
